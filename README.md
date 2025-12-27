@@ -30,7 +30,7 @@ My profile is defined by a unique blend of academic excellence and practical app
 The presentation is best viewed live for the full interactive experience.
 
 1.  **Live Version**: Click the badge at the top of this README or navigate to:
-    `https://nivetha205.github.io/Hire_Nivetha/`
+    `https://nivetha205.github.io/Hire_Nivetha/` "https://manus.im/share/file/2f75f675-25e2-48c0-bb98-538cc795f34a"
 2.  **Offline Version (PDF )**: A static PDF export of the presentation is available for download in this repository.
 
 ## 📧 Contact
