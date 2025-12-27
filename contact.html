@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700;900&family=Proxima+Nova:wght@300;400;600;700&display=swap');
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #f8f5f2;
+        color: #3a3a3a;
+        position: relative;
+      }
+      
+      .title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 1.1;
+        color: #3a3a3a;
+      }
+      
+      .subtitle {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #8c7a6b;
+      }
+      
+      .body-text {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      
+      .highlight-text {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: #8c7a6b;
+        line-height: 1.2;
+      }
+      
+      .stakeholder-title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #3a3a3a;
+      }
+      
+      .stakeholder-desc {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      
+      .chapter-marker {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 180px;
+        color: rgba(58, 58, 58, 0.05);
+        position: absolute;
+        top: -20px;
+        right: 40px;
+        z-index: 0;
+      }
+      
+      .chart-container {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-10 flex items-center justify-evenly">
+      <div class="chapter-marker">C</div>
+      
+      <div class="w-1/2 pr-8 z-10">
+        <div class="subtitle mb-1">CONTACT & PROFESSIONAL LINKS</div>
+        <div class="title mb-4">Let's Build the Future Together</div>
+        
+        <div class="body-text mb-4">
+          Nivetha R S is ready to bring technical expertise and leadership to your team. Reach out to discuss potential collaborations or opportunities.
+        </div>
+        
+        <div class="highlight-text mb-4">
+          "The best way to predict the future is to create it."
+        </div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <div class="stakeholder-title mb-1">Email</div>
+            <div class="stakeholder-desc">nivethashankar99@gmail.com</div>
+          </div>
+          
+          <div>
+            <div class="stakeholder-title mb-1">LinkedIn</div>
+            <div class="stakeholder-desc">linkedin.com/in/nivetha-r-s-72a84327a</div>
+          </div>
+          
+          <div>
+            <div class="stakeholder-title mb-1">GitHub</div>
+            <div class="stakeholder-desc">github.com/nivetha205</div>
+          </div>
+          
+          <div>
+            <div class="stakeholder-title mb-1">Location</div>
+            <div class="stakeholder-desc">Madurai, Tamil Nadu, India</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w-1/2 pl-8">
+        <div class="chart-container">
+          <canvas id="networkChart"></canvas>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const ctx = document.getElementById('networkChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['2021', '2022', '2023', '2024', '2025'],
+          datasets: [
+            {
+              label: 'Professional Network',
+              data: [10, 25, 45, 75, 100],
+              backgroundColor: 'rgba(140, 122, 107, 0.2)',
+              borderColor: 'rgba(140, 122, 107, 1)',
+              borderWidth: 3,
+              tension: 0.4,
+              fill: true
+            },
+            {
+              label: 'Technical Contributions',
+              data: [5, 20, 40, 65, 95],
+              backgroundColor: 'rgba(58, 58, 58, 0.1)',
+              borderColor: 'rgba(58, 58, 58, 1)',
+              borderWidth: 3,
+              tension: 0.4,
+              fill: true
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              ticks: { color: '#3a3a3a' },
+              grid: { color: 'rgba(58, 58, 58, 0.1)' }
+            },
+            x: {
+              ticks: { color: '#3a3a3a' },
+              grid: { display: false }
+            }
+          },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { font: { family: "'Proxima Nova', sans-serif", size: 14 }, color: '#3a3a3a' }
+            },
+            title: {
+              display: true,
+              text: 'Professional & Technical Growth Index',
+              font: { family: "'Bodoni Moda', serif", size: 20 },
+              color: '#3a3a3a'
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

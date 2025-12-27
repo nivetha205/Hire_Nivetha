@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700;900&family=Proxima+Nova:wght@300;400;600;700&display=swap');
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #f8f5f2;
+        color: #3a3a3a;
+        position: relative;
+      }
+      
+      .title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 1.1;
+        color: #3a3a3a;
+      }
+      
+      .subtitle {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #8c7a6b;
+      }
+      
+      .body-text {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      
+      .quote-box {
+        border-left: 4px solid #c9b5a3;
+        padding-left: 20px;
+        font-family: 'Bodoni Moda', serif;
+        font-style: italic;
+        font-size: 24px;
+        line-height: 1.4;
+        color: #8c7a6b;
+      }
+      
+      .element-title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #3a3a3a;
+      }
+      
+      .element-desc {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      
+      .chapter-marker {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 180px;
+        color: rgba(58, 58, 58, 0.05);
+        position: absolute;
+        top: -20px;
+        right: 40px;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-10 flex items-center justify-evenly">
+      <div class="chapter-marker">L</div>
+      
+      <div class="w-1/2 pr-8 z-10">
+        <div class="subtitle mb-1">VERSATILE LEADERSHIP ROLES</div>
+        <div class="title mb-4">More Than Just a Developer</div>
+        
+        <div class="body-text mb-4">
+          Nivetha's leadership is demonstrated through high-impact roles that require strategic thinking, team coordination, and the ability to deliver results under pressure.
+        </div>
+        
+        <div class="quote-box mb-4">
+          "The greatest leader is not necessarily the one who does the greatest things. He is the one that gets the people to do the greatest things."
+          <div class="text-right text-sm mt-1">— Ronald Reagan</div>
+        </div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <div class="element-title mb-1">SIH 2025 Head</div>
+            <div class="element-desc">Leading and mentoring teams for the Smart India Hackathon</div>
+          </div>
+          
+          <div>
+            <div class="element-title mb-1">WEB WHIZ Lead</div>
+            <div class="element-desc">Organizing and hosting major technical events (Zeigen’2K25)</div>
+          </div>
+          
+          <div>
+            <div class="element-title mb-1">Sports Vice-Captain</div>
+            <div class="element-desc">Coordinating large groups and fostering team spirit</div>
+          </div>
+          
+          <div>
+            <div class="element-title mb-1">Conference Presenter</div>
+            <div class="element-desc">Representing research at international and national levels</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w-1/2 flex items-center justify-center">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=500&q=80" alt="Leadership and guidance" style="width: 500px; height: 500px; object-fit: cover;">
+      </div>
+    </div>
+  </body>
+</html>

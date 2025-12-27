@@ -1,0 +1,100 @@
+{
+  "project_info": {
+    "title": "Nivetha R S: Bridging Technical Excellence and Leadership",
+    "created": 1766841431.402725,
+    "last_updated": 1766841552.1210184,
+    "total_slides": 11
+  },
+  "slides": {
+    "intro": "edited",
+    "skills": "edited",
+    "project_cogniguide": "edited",
+    "project_echoes": "edited",
+    "project_stock": "edited",
+    "experience": "edited",
+    "education": "edited",
+    "leadership_divider": "edited",
+    "leadership_details": "edited",
+    "why_hire_me": "edited",
+    "contact": "edited"
+  },
+  "outline": [
+    {
+      "id": "intro",
+      "title": "Nivetha R S: Bridging Technical Excellence and Leadership",
+      "summary": "Introduction to Nivetha R S, highlighting the blend of technical skills in AI/ML and leadership qualities.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "cover_slide"
+    },
+    {
+      "id": "skills",
+      "title": "Core Technical Proficiency and Skill Set",
+      "summary": "A comprehensive overview of technical skills including Java, Python, AI/ML frameworks, and web technologies.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "innovative_pattern"
+    },
+    {
+      "id": "project_cogniguide",
+      "title": "CogniGuide: Revolutionizing Learning with AI",
+      "summary": "Detailed look at the CogniGuide project, an AI-powered learning assistant using RAG and LLMs.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "mathematics_pattern"
+    },
+    {
+      "id": "project_echoes",
+      "title": "Echoes: Driving Engagement through Anonymous Blogging",
+      "summary": "Showcasing the Echoes blogging platform and its presentation at the Google Developer Club.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "editorial_perspective"
+    },
+    {
+      "id": "project_stock",
+      "title": "Data-Driven Insights: Stock Price Prediction",
+      "summary": "Explaining the automated XGBoost-based ML pipeline for stock price prediction.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "mathematics_pattern"
+    },
+    {
+      "id": "experience",
+      "title": "Practical Experience: Internships and Real-World Application",
+      "summary": "Summary of internship experiences at S.R. Software and CodSoft.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "front_row_culture"
+    },
+    {
+      "id": "education",
+      "title": "Academic Excellence and Continuous Learning",
+      "summary": "Academic background at KLN College of Engineering and participation in technical conferences.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "innovative_pattern"
+    },
+    {
+      "id": "leadership_divider",
+      "title": "Leadership and Collaborative Impact",
+      "summary": "Section divider focusing on leadership roles and event management.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "mood_board"
+    },
+    {
+      "id": "leadership_details",
+      "title": "More Than Just a Developer",
+      "summary": "Detailed leadership roles including SIH Head, Event Lead, and Sports Vice-Captain.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "editorial_perspective"
+    },
+    {
+      "id": "why_hire_me",
+      "title": "Why Nivetha R S is the Right Choice for Your Team",
+      "summary": "Final pitch summarizing the unique blend of skills, leadership, and results.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "conclusion"
+    },
+    {
+      "id": "contact",
+      "title": "Let's Build the Future Together",
+      "summary": "Contact information and professional links.",
+      "image_plan": "Use a suitable image if needed",
+      "slide_template_key": "front_row_culture"
+    }
+  ]
+}

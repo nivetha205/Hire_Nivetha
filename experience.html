@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700;900&family=Proxima+Nova:wght@300;400;600;700&display=swap');
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #f8f5f2;
+        color: #3a3a3a;
+        position: relative;
+      }
+      
+      .title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 1.1;
+        color: #3a3a3a;
+      }
+      
+      .subtitle {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #8c7a6b;
+      }
+      
+      .body-text {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      
+      .highlight-text {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: #8c7a6b;
+        line-height: 1.2;
+      }
+      
+      .stakeholder-title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #3a3a3a;
+      }
+      
+      .stakeholder-desc {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      
+      .chapter-marker {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 180px;
+        color: rgba(58, 58, 58, 0.05);
+        position: absolute;
+        top: -20px;
+        right: 40px;
+        z-index: 0;
+      }
+      
+      .chart-container {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-10 flex items-center justify-evenly">
+      <div class="chapter-marker">E</div>
+      
+      <div class="w-1/2 pr-8 z-10">
+        <div class="subtitle mb-1">REAL-WORLD APPLICATION</div>
+        <div class="title mb-4">Practical Experience</div>
+        
+        <div class="body-text mb-4">
+          Nivetha has successfully transitioned academic theory into professional execution through impactful internships, delivering functional software solutions in collaborative environments.
+        </div>
+        
+        <div class="highlight-text mb-4">
+          "Experience is the bridge between knowing and doing."
+        </div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <div class="stakeholder-title mb-1">Web Dev Intern</div>
+            <div class="stakeholder-desc">Developed Student Feedback System at S.R. Software</div>
+          </div>
+          
+          <div>
+            <div class="stakeholder-title mb-1">Python Intern</div>
+            <div class="stakeholder-desc">Applied core concepts through mini-projects at CodSoft</div>
+          </div>
+          
+          <div>
+            <div class="stakeholder-title mb-1">Project Impact</div>
+            <div class="stakeholder-desc">Built authentication and admin reporting modules</div>
+          </div>
+          
+          <div>
+            <div class="stakeholder-title mb-1">Technical Growth</div>
+            <div class="stakeholder-desc">Mastered PHP, MySQL, and professional workflows</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w-1/2 pl-8">
+        <div class="chart-container">
+          <canvas id="growthChart"></canvas>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const ctx = document.getElementById('growthChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'line',
+        data: {
+          labels: ['Q1 2024', 'Q2 2024', 'Q3 2024', 'Q4 2024', 'Q1 2025'],
+          datasets: [
+            {
+              label: 'Technical Proficiency',
+              data: [40, 55, 70, 85, 92],
+              borderColor: 'rgba(140, 122, 107, 1)',
+              backgroundColor: 'rgba(140, 122, 107, 0.2)',
+              borderWidth: 3,
+              tension: 0.4,
+              fill: true
+            },
+            {
+              label: 'Project Complexity',
+              data: [30, 45, 60, 80, 95],
+              borderColor: 'rgba(58, 58, 58, 1)',
+              backgroundColor: 'rgba(58, 58, 58, 0.1)',
+              borderWidth: 3,
+              tension: 0.4,
+              fill: true
+            }
+          ]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 100,
+              ticks: { color: '#3a3a3a' },
+              grid: { color: 'rgba(58, 58, 58, 0.1)' }
+            },
+            x: {
+              ticks: { color: '#3a3a3a' },
+              grid: { display: false }
+            }
+          },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: { font: { family: "'Proxima Nova', sans-serif", size: 14 }, color: '#3a3a3a' }
+            },
+            title: {
+              display: true,
+              text: 'Professional Skill & Project Growth',
+              font: { family: "'Bodoni Moda', serif", size: 20 },
+              color: '#3a3a3a'
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

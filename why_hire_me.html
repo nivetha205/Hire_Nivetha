@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700;900&family=Proxima+Nova:wght@300;400;600;700&display=swap');
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #f8f5f2;
+        color: #3a3a3a;
+        position: relative;
+      }
+      
+      .title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 1.1;
+        color: #3a3a3a;
+      }
+      
+      .subtitle {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #8c7a6b;
+      }
+      
+      .body-text {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      
+      .highlight-text {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: #8c7a6b;
+        line-height: 1.2;
+      }
+      
+      .chapter-marker {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 180px;
+        color: rgba(58, 58, 58, 0.05);
+        position: absolute;
+        top: -20px;
+        right: 40px;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-10 flex items-center justify-evenly">
+      <div class="chapter-marker">N</div>
+      
+      <div class="w-1/2 pr-8 z-10">
+        <div class="subtitle mb-1">THE FINAL PITCH</div>
+        <div class="title mb-4">Why Nivetha R S is the Right Choice</div>
+        
+        <div class="body-text mb-4">
+          Nivetha R S offers a unique combination of technical versatility in AI/ML frameworks, proven leadership in high-stakes environments, and exceptional communication skills. With a track record of building functional, impactful projects and a commitment to continuous learning, Nivetha is prepared to drive innovation and deliver high-quality results for your organization.
+        </div>
+        
+        <div class="highlight-text">
+          "The best way to predict the future is to create it. Let's build something extraordinary together."
+        </div>
+      </div>
+      
+      <div class="w-1/2 flex items-center justify-center">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=480&q=80" alt="Professional success and growth" style="width: 500px; height: 480px; object-fit: cover;">
+      </div>
+    </div>
+  </body>
+</html>

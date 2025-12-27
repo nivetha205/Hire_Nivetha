@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700;900&family=Proxima+Nova:wght@300;400;600;700&display=swap');
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #f8f5f2;
+        color: #3a3a3a;
+        position: relative;
+      }
+      
+      .title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 1.1;
+        color: #3a3a3a;
+      }
+      
+      .subtitle {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #8c7a6b;
+      }
+      
+      .body-text {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      
+      .highlight-text {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 700;
+        font-size: 32px;
+        color: #8c7a6b;
+        line-height: 1.2;
+      }
+      
+      .principle-title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #3a3a3a;
+      }
+      
+      .principle-desc {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      
+      .chapter-marker {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 180px;
+        color: rgba(58, 58, 58, 0.05);
+        position: absolute;
+        top: -20px;
+        right: 40px;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-10 flex items-center">
+      <div class="chapter-marker">S</div>
+      
+      <div class="w-1/2 pr-8 z-10">
+        <div class="subtitle mb-1">FINANCIAL FORECASTING</div>
+        <div class="title mb-4">Data-Driven Insights: Stock Price Prediction</div>
+        
+        <div class="body-text mb-4">
+          This project leverages an automated XGBoost-based Machine Learning pipeline to predict next-day stock prices using real-time market data and advanced feature engineering.
+        </div>
+        
+        <div class="highlight-text mb-4">
+          "In God we trust, all others must bring data."
+        </div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <div class="principle-title mb-1">XGBoost Pipeline</div>
+            <div class="principle-desc">High-performance gradient boosting for predictive accuracy</div>
+          </div>
+          
+          <div>
+            <div class="principle-title mb-1">Feature Engineering</div>
+            <div class="principle-desc">Transforming raw market data into actionable model inputs</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w-1/2 flex items-center justify-center">
+        <div style="width: 100%; height: 450px;">
+          <canvas id="stockChart"></canvas>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      const ctx = document.getElementById('stockChart').getContext('2d');
+      new Chart(ctx, {
+        type: 'radar',
+        data: {
+          labels: ['Accuracy', 'Precision', 'Recall', 'F1-Score', 'Data Processing', 'Feature Engineering'],
+          datasets: [{
+            label: 'Model Performance Metrics',
+            data: [88, 85, 82, 84, 90, 92],
+            backgroundColor: 'rgba(140, 122, 107, 0.2)',
+            borderColor: 'rgba(140, 122, 107, 1)',
+            borderWidth: 2,
+            pointBackgroundColor: 'rgba(140, 122, 107, 1)'
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            r: {
+              angleLines: { color: 'rgba(58, 58, 58, 0.1)' },
+              grid: { color: 'rgba(58, 58, 58, 0.1)' },
+              pointLabels: {
+                font: { family: "'Proxima Nova', sans-serif", size: 14 },
+                color: '#3a3a3a'
+              },
+              ticks: { display: false, backdropColor: 'transparent' }
+            }
+          },
+          plugins: {
+            legend: {
+              position: 'bottom',
+              labels: {
+                font: { family: "'Proxima Nova', sans-serif", size: 14 },
+                color: '#3a3a3a'
+              }
+            }
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

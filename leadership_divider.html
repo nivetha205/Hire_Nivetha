@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700;900&family=Proxima+Nova:wght@300;400;600;700&display=swap');
+      
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .slide-container {
+        width: 1280px;
+        min-height: 720px;
+        background-color: #f8f5f2;
+        color: #3a3a3a;
+        position: relative;
+      }
+      
+      .title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 1;
+        color: #3a3a3a;
+      }
+      
+      .subtitle {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #8c7a6b;
+      }
+      
+      .body-text {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+      }
+      
+      .highlight-text {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 700;
+        font-size: 36px;
+        color: #8c7a6b;
+        line-height: 1.2;
+      }
+      
+      .element-title {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #3a3a3a;
+      }
+      
+      .element-desc {
+        font-family: 'Proxima Nova', sans-serif;
+        font-size: 18px;
+        line-height: 1.4;
+      }
+      
+      .chapter-marker {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 900;
+        font-size: 180px;
+        color: rgba(58, 58, 58, 0.05);
+        position: absolute;
+        top: -20px;
+        right: 40px;
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slide-container p-10 flex items-center justify-evenly">
+      <div class="chapter-marker">L</div>
+      
+      <div class="w-1/2 flex items-center justify-center">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&h=500&q=80" alt="Team collaboration" style="width: 500px; height: 500px; object-fit: cover;">
+      </div>
+      
+      <div class="w-1/2 pl-8 z-10">
+        <div class="subtitle mb-1">BEYOND THE CODE</div>
+        <div class="title mb-4">Leadership & Impact</div>
+        
+        <div class="body-text mb-4">
+          Nivetha's professional journey is defined by a commitment to leadership, mentoring, and fostering collaborative environments that drive technical innovation.
+        </div>
+        
+        <div class="highlight-text mb-4">
+          "Leadership is the capacity to translate vision into reality."
+        </div>
+        
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <div class="element-title mb-1">Mentorship</div>
+            <div class="element-desc">Guiding teams in high-stakes hackathons like SIH 2025</div>
+          </div>
+          
+          <div>
+            <div class="element-title mb-1">Event Lead</div>
+            <div class="element-desc">Managing large-scale technical events like WEB WHIZ</div>
+          </div>
+          
+          <div>
+            <div class="element-title mb-1">Teamwork</div>
+            <div class="element-desc">Proven collaboration in sports and academic projects</div>
+          </div>
+          
+          <div>
+            <div class="element-title mb-1">Communication</div>
+            <div class="element-desc">Expertise in public speaking and technical blogging</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
