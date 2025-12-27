@@ -1,4 +1,4 @@
-# Hire_Nivetha
+# Nivetha
 Advantages of hiring me
 
 # Why You Should Hire Nivetha R S: A Professional Portfolio
